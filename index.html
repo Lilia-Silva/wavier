@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waiver and Release of Liability</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .minor-section {
+      display: none;
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+    .header{
+        background-color: rgb(65, 109, 41);
+        margin: 0;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .center-input{
+        width: 90%;
+        height: 25px;
+        border-color: rgb(28, 96, 14);
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
+        font-size: 16px;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+    label {
+    margin-left: 40px;
+  }
+   .submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:15px;
+    font-size: 16px;
+    margin-bottom: 40px;
+    background-color: rgb(133, 217, 87);
+    border-style: none;
+    border-radius: 5px;
+  }
+  .submit:hover{
+    background-color: rgb(65, 109, 41);
+    color: white;
+    border-radius: 5px;
+  }
+  h3{
+    margin-left: 40px;
+  }
+  p{
+    text-indent: 20px;
+    line-height: 25px;
+  }
+
+  #isMinor {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+#isMinor input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1>Waiver and Release of Liability</h1>
+  </div>
+  <div style="border: 1px solid #ccc; padding: 15px; max-height: 250px; overflow-y: auto; background-color: #f9f9f9; margin-bottom: 20px;">
+  <p>
+    I, the undersigned participant, acting on my own behalf or representing others, acknowledge and accept that INVERSIONES MARDIGI M&D, SOCIEDAD ANÓNIMA, legal ID number 3–101–509190, legally represented by its President, Mrs. Dicgiana Gómez Jaen, of legal age, married, entrepreneur, holder of Costa Rican ID number 5–0241–0364, acting with full legal authority and general power of attorney, is the company responsible for organizing and operating tourism activities in the Guanacaste region of Costa Rica.
+  </p>
+  <p>
+    By participating in any of the activities offered by MARDIGI TOURS, I understand that there are inherent risks that may affect my physical or emotional wellbeing. Therefore, I voluntarily accept and sign this Waiver and Release of Liability, assuming full responsibility for any consequences arising from my participation.
+  </p>
+  <p>
+    I hereby release and discharge MARDIGI TOURS, as well as all its employees, affiliates, volunteers, agents, legal representatives, managers, successors, and assigns (hereinafter, the “Released Parties”) from any and all claims, actions, damages, or liabilities, known or unknown, resulting from any injury, loss, or incident that may occur while participating in the mentioned activities.
+  </p>
+  <p>
+    I understand and agree that my participation is voluntary and at my own risk. I commit to following all safety instructions given by the tour guides, respect restricted areas, and adhere to all established safety measures. I am aware that the risks may include, but are not limited to: physical or emotional injuries, illness, temporary or permanent disability, financial loss, or even death.
+  </p>
+  <p>
+    These risks may arise from my own conduct, from the actions of others, from the travel conditions to and from the activity site, or from environmental factors. Despite these risks, I voluntarily choose to participate and assume all responsibilities.
+  </p>
+  <p>
+    In the event that I require emergency medical treatment, I authorize MARDIGI TOURS or any of its authorized personnel to arrange and provide the necessary care, including first aid, CPR, AED use, or medical transport. I agree to be financially responsible for any and all expenses incurred from such treatment and confirm that I have valid medical insurance coverage.
+  </p>
+  <p>
+    I acknowledge that I have read this waiver thoroughly and understand its content. I am aware that this is a legally binding release and that by signing it, I am waiving certain rights that I or my representatives might otherwise have to bring legal action. This agreement shall remain in effect throughout my participation in the current and any future activities organized by MARDIGI TOURS.
+  </p>
+  <p>
+    This document shall be governed by the laws of the Republic of Costa Rica. If any provision of this waiver is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect. This agreement replaces any prior verbal or written understanding and may only be modified in writing and signed by both parties.
+  </p>
+</div>
+
+
+  <form action="#" method="post">
+
+    <label for="participantName">Participant Full Name:</label><br>
+    <input type="text" id="participantName" name="participantName" class="center-input" required><br><br>
+
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address" class="center-input" required><br><br>
+
+    <label for="date">Date:</label><br>
+    <input type="date" id="date" name="date" class="center-input" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" class="center-input" required><br><br>
+
+    <h3>In Case of Emergency, Please Contact:</h3>
+
+    <label for="emergencyName">Name:</label><br>
+    <input type="text" id="emergencyName" name="emergencyName" class="center-input"><br><br>
+
+    <label for="emergencyRelationship">Relationship:</label><br>
+    <input type="text" id="emergencyRelationship" name="emergencyRelationship" class="center-input"><br><br>
+
+    <label for="emergencyPhone">Phone:</label><br>
+    <input type="tel" id="emergencyPhone" name="emergencyPhone" class="center-input"><br><br>
+
+    <input type="checkbox" id="isMinor" name="isMinor"  onchange="toggleMinorSection()">
+    <label for="isMinor" >I am under 18 years old</label><br><br>
+
+    <div class="minor-section" id="minorSection">
+      <h3>Parent/Guardian Waiver for Minors</h3>
+      <label for="guardianName">Parent/Guardian Full Name:</label><br>
+      <input type="text" id="guardianName" name="guardianName" class="center-input"><br><br>
+
+      <label for="minorNames">Minor Full Name(s):</label><br>
+      <input type="text" id="minorNames" name="minorNames" class="center-input"><br><br>
+
+      <label for="relationToMinor">Relationship to Minor:</label><br>
+      <input type="text" id="relationToMinor" name="relationToMinor" class="center-input"><br><br>
+    </div>
+
+    <label for="signature">Signature of the Participant:</label><br>
+    <input type="text" id="signature" name="signature" class="center-input" required><br><br>
+
+    <input type="submit" class="submit" value="Submit Waiver">
+  </form>
+
+  <script>
+    function toggleMinorSection() {
+      const checkbox = document.getElementById('isMinor');
+      const section = document.getElementById('minorSection');
+      section.style.display = checkbox.checked ? 'block' : 'none';
+    }
+  </script>
+
+  <script>
+  document.getElementById('phone').addEventListener('input', function (e) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+  });
+</script>
+
+<script>
+  document.getElementById('emergencyPhone').addEventListener('input', function (e) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+  });
+</script>
+
+</body>
+</html>
